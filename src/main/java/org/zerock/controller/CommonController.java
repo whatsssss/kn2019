@@ -9,7 +9,10 @@ import lombok.extern.log4j.Log4j;
 @Controller 
 @Log4j
 public class CommonController {
-
+	@GetMapping("/customLogout")
+	public void customLogout() {
+		log.info("custom logout....");
+	}
 	
 	@RequestMapping("/accessError")
 	public void accessError() {
